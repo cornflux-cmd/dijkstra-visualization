@@ -1,14 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Graph : MonoBehaviour
 {
-    public virtual Vertex[] vertices
+    List<Vertex> verticesList = new List<Vertex>();
+    public virtual List<Vertex> vertices
     {
         get
         {
-            return transform.GetComponentsInChildren<Vertex>();
+            return verticesList;
+        }
+    }
+
+    public void CreateVerticesList()
+    {
+        Vertex[] verticesArray = transform.GetComponentsInChildren<Vertex>();
+
+        for (int i = 0; i < verticesArray.Length; i++)
+        {
+            verticesList.Add(verticesArray[i]);
         }
     }
 }

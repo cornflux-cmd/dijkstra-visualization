@@ -14,4 +14,9 @@ public class Vertex : MonoBehaviour
             return connectionsList;
         }
     }
+
+    public void AddConnection(Vertex vertex)
+    {
+        connectionsList.Add(vertex);
+    }
 }
