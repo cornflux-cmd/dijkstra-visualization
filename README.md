@@ -22,6 +22,7 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 **Note:** you only need to connect **Vertices** ONCE, algorithm will sync all pairs
 4. Under **Shortest Path** component on the **Graph** specify *Start* and *Finish* vertices
 5. Click *Build* under **Graph's** component
+6. **Path** will be highlighted with Green color, starting *Edge* will be marked Red
 
 ### Runtime
 Not yet fully supported, try at your own risk
