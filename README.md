@@ -1,6 +1,6 @@
 # Dijkstra Visualization
 
-![Game screenshot](https://imgur.com/1frrasU.png)
+![Game screenshot](https://imgur.com/GpQizxc.png)
 ## About
 <p align="center">
   <b>Dijkstra's Shortest Path First algorithm implementation</b><br>
