@@ -2,12 +2,13 @@
 
 ![Game screenshot](https://imgur.com/1frrasU.png)
 ## About
+![Dijkstra Animation](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
 [GameOn Production](https://www.gameonproduction.com/) test task source code
 
 Dijkstra's Shortest Path First algorithm implementation
 
 This project is an implementation of the [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and also my dive into developing tools under Unity Editor API
-![Dijkstra Animation](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
+
 
 ## Installation
 1. [Download](https://github.com/cornflux-cmd/dijkstra-visualization/releases/latest) the latest version of the package
@@ -26,6 +27,8 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 
 ### Runtime
 Not yet fully supported, try at your own risk
+
+*Drawn inspiration for visuals from [this](https://github.com/EmpireWorld/unity-dijkstras-pathfinding)*
 ___
 <p align="center">
   <b>Made With</b><br>
