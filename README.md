@@ -3,6 +3,7 @@
 ![Game screenshot](https://imgur.com/1frrasU.png)
 ## About
 ![Dijkstra Animation](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
+
 [GameOn Production](https://www.gameonproduction.com/) test task source code
 
 Dijkstra's Shortest Path First algorithm implementation
