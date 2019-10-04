@@ -4,7 +4,7 @@
 ## About
 <p align="center">
   <b>Dijkstra's Shortest Path First algorithm implementation</b><br>
-  <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif"</a>
+  <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif"></a>
 </p>
 
 [GameOn Production](https://www.gameonproduction.com/) test task source code
