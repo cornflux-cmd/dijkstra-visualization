@@ -17,13 +17,14 @@ public class GraphEditor : Editor
     private SpriteRenderer renderer;
     private bool isBuildButtonPressed;
     private List<string> visitedVertices = new List<string>();
+    private Vector3 tempVertexPosition;
+    private Vector3 tempConnectionPosition;
 
     private void OnEnable()
     {
         graph = target as Graph;
         graph.CreateVerticesList();
         path = graph.GetComponent<ShortestPath>();
-        DrawVertices(true);
     }
 
     private void OnSceneGUI()
@@ -39,7 +40,6 @@ public class GraphEditor : Editor
 
     private void OnDisable()
     {
-            DrawVertices(false);
             graph.vertices.Clear();
             isBuildButtonPressed = false;
     }
@@ -49,7 +49,6 @@ public class GraphEditor : Editor
         foreach (Vertex vertex in graph.vertices)
         {
             visitedVertices.Add(vertex.name);
-            DrawVertexLabel(vertex);
             foreach (Vertex connection in vertex.connections)
             {
                 if (visitedVertices.Contains(connection.name)) continue;
@@ -74,20 +73,6 @@ public class GraphEditor : Editor
         visitedVertices.Clear();
     }
 
-    private void DrawVertices(bool enable)
-    {
-        foreach (Vertex vertex in graph.vertices)
-        {
-            renderer = vertex.GetComponent<SpriteRenderer>();
-            renderer.enabled = enable;
-        }
-
-    }
-
-    private void DrawVertexLabel(Vertex vertex)
-    {
-        Handles.Label(vertex.transform.position, vertex.name, EditorStyles.whiteLabel);
-    }
 
     private void DrawEdge(Vertex vertex, Vertex connection, int variant)
     {
@@ -107,9 +92,11 @@ public class GraphEditor : Editor
             {
                 Handles.color = Color.red;
             }
-
-            Handles.DrawLine(vertex.transform.position, connection.transform.position);
+            tempVertexPosition = vertex.transform.position;
+            tempConnectionPosition = connection.transform.position;
+            Handles.DrawLine(tempVertexPosition, tempConnectionPosition);
             Handles.color = oldColor;
+            Handles.Label((tempConnectionPosition + tempVertexPosition) / 2, Vector3.Distance(tempConnectionPosition, tempVertexPosition).ToString(), EditorStyles.whiteLabel);
         }
     }
 }

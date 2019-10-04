@@ -190,28 +190,28 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
-        type: 3}
-      propertyPath: connectionsList.Array.data[0]
-      value: 
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[1]
       value: 
-      objectReference: {fileID: 582564339}
+      objectReference: {fileID: 1297275099}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[2]
       value: 
-      objectReference: {fileID: 582564339}
+      objectReference: {fileID: 827708145}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[3]
       value: 
       objectReference: {fileID: 827708145}
+    - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
+        type: 3}
+      propertyPath: connectionsList.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3622999649388509904, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: m_Enabled
@@ -301,12 +301,7 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
-        type: 3}
-      propertyPath: connectionsList.Array.data[0]
-      value: 
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
@@ -320,14 +315,9 @@ PrefabInstance:
       objectReference: {fileID: 827708145}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
-      propertyPath: connectionsList.Array.data[3]
+      propertyPath: connectionsList.Array.data[0]
       value: 
-      objectReference: {fileID: 1214915137}
-    - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
-        type: 3}
-      propertyPath: connectionsList.Array.data[4]
-      value: 
-      objectReference: {fileID: 1214915137}
+      objectReference: {fileID: 827708145}
     - target: {fileID: 3622999649388509904, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: m_Enabled
@@ -500,23 +490,23 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[0]
       value: 
-      objectReference: {fileID: 428536470}
+      objectReference: {fileID: 1214915137}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[1]
       value: 
-      objectReference: {fileID: 827708145}
+      objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[2]
       value: 
-      objectReference: {fileID: 1214915137}
+      objectReference: {fileID: 827708145}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[3]
@@ -616,7 +606,7 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
@@ -626,6 +616,11 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[1]
+      value: 
+      objectReference: {fileID: 514824648}
+    - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
+        type: 3}
+      propertyPath: connectionsList.Array.data[2]
       value: 
       objectReference: {fileID: 582564339}
     - target: {fileID: 3622999649388509904, guid: 1bf4b8a02bb728546be390e406a24b0d,
@@ -717,7 +712,7 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
@@ -818,13 +813,13 @@ PrefabInstance:
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[0]
       value: 
-      objectReference: {fileID: 428536470}
+      objectReference: {fileID: 514824648}
     - target: {fileID: 4100302089960993104, guid: 1bf4b8a02bb728546be390e406a24b0d,
         type: 3}
       propertyPath: connectionsList.Array.data[1]
@@ -935,12 +930,12 @@ PrefabInstance:
         type: 3}
       propertyPath: finishVertex
       value: 
-      objectReference: {fileID: 1214915137}
+      objectReference: {fileID: 827708145}
     - target: {fileID: 8030779214328398692, guid: bda70e6452b1810459a9830e41beeec9,
         type: 3}
       propertyPath: startVertex
       value: 
-      objectReference: {fileID: 428536470}
+      objectReference: {fileID: 1214915137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bda70e6452b1810459a9830e41beeec9, type: 3}
 --- !u!4 &1776649106 stripped
