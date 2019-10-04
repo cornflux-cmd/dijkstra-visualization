@@ -1,7 +1,7 @@
 # Dijkstra Visualization
 
 ![Game screenshot](https://imgur.com/U2VmTOB.png)
-## WIP
+## About
 [GameOn Production](https://www.gameonproduction.com/) test task source code
 
 Dijkstra's Shortest Path First algorithm implementation
