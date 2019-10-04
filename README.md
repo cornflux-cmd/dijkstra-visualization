@@ -30,7 +30,7 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 ### Runtime
 Not yet fully supported, try at your own risk
 
-*Drawn inspiration for visual design from [here](https://github.com/EmpireWorld/unity-dijkstras-pathfinding)*
+*Visual design inspired by [EmpireWorld's implementation](https://github.com/EmpireWorld/unity-dijkstras-pathfinding)*
 ___
 <p align="center">
   <b>Made With</b><br>
