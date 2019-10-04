@@ -25,9 +25,7 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 
 ### Runtime
 Not yet fully supported, try at your own risk
-
-
-
+___
 <p align="center">
   <b>Made With</b><br>
   <a href="https://unity.com/"><img src="https://unity3d.com/files/images/ogimg.jpg"</a>
