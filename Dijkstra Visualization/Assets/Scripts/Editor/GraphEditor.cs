@@ -18,7 +18,7 @@ public class GraphEditor : Editor
     private bool isBuildButtonPressed;
     private List<string> visitedVertices = new List<string>();
 
-    private void Build()
+    private void OnEnable()
     {
         graph = target as Graph;
         graph.CreateVerticesList();
@@ -28,8 +28,9 @@ public class GraphEditor : Editor
 
     private void OnSceneGUI()
     {
-        if (isBuildButtonPressed && graph.vertices.Count > 0)
+        if (graph.vertices != null && graph.vertices.Count > 0)
         {
+            graph.SyncConnections();
             path.vertices = graph.vertices;
             path.CalculateShortestPath();
             DrawGraph();
@@ -38,17 +39,13 @@ public class GraphEditor : Editor
 
     private void OnDisable()
     {
-        if (isBuildButtonPressed)
-        {
             DrawVertices(false);
             graph.vertices.Clear();
             isBuildButtonPressed = false;
-        }
     }
 
     private void DrawGraph()
     {
-
         foreach (Vertex vertex in graph.vertices)
         {
             visitedVertices.Add(vertex.name);
@@ -113,16 +110,6 @@ public class GraphEditor : Editor
 
             Handles.DrawLine(vertex.transform.position, connection.transform.position);
             Handles.color = oldColor;
-        }
-    }
-
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
-        if (GUILayout.Button("Build"))
-        {
-            isBuildButtonPressed = true;
-            Build();
         }
     }
 }
