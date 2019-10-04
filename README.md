@@ -25,8 +25,8 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 **Note:** you only need to connect **Vertices** ONCE, algorithm will sync all pairs
 4. Under **Shortest Path** component on the **Graph** specify *Start* and *Finish* vertices
 5. Click *Build* under **Graph's** component
-6. **Path** will be highlighted with Green color, starting *Edge* will be marked Red
-**Note:** if you need to unpair the **Vertices** (remove an *Edge* from the **Graph**), you have to remove both of them from each other's connections list
+6. **Path** will be highlighted with Green color, starting *Edge* will be marked Red  
+**Note:** if you want to unpair the **Vertices** (remove an *Edge* from the **Graph**), you have to remove both of them from each other's connections list
 
 ### Runtime
 Not yet fully supported, try at your own risk
