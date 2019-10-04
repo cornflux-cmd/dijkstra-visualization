@@ -18,7 +18,7 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 ### Editor
 1. Create your own **Graph** by dragging its prefab onto the scene or use *Demo* scene
 2. Drag **Vertices** prefabs onto the **Graph** in Hierarchy, making them its children
-3. Connect the **Vertices** by specifying connections in each **Vertex's** corresponding component  
+3. Connect the **Vertices'** by specifying connections in each **Vertex's** corresponding component  
 **Note:** you only need to connect **Vertices** ONCE, algorithm will sync all pairs
 4. Under **Shortest Path** component on the **Graph** specify *Start* and *Finish* vertices
 5. Click *Build* under **Graph's** component
