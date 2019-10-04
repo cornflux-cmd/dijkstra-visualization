@@ -23,6 +23,7 @@ public class Graph : MonoBehaviour
             {
                 verticesList.Add(verticesArray[i]);
             }
+            SyncConnections();
         }
        
     }

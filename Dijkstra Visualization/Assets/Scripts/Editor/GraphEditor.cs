@@ -24,7 +24,6 @@ public class GraphEditor : Editor
         graph.CreateVerticesList();
         path = graph.GetComponent<ShortestPath>();
         DrawVertices(true);
-        graph.SyncConnections();
     }
 
     private void OnSceneGUI()
