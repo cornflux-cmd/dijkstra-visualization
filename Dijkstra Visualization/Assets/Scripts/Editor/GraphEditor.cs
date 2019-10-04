@@ -54,9 +54,10 @@ public class GraphEditor : Editor
                 if (visitedVertices.Contains(connection.name)) continue;
                 if (path.vertices.Contains(vertex) && path.vertices.Contains(connection))
                 {
-                    if (vertex == path.start)
+                    if (vertex == path.start || connection == path.start)
                     {
                         DrawEdge(vertex, connection, StartEdgeCode);
+                        
                     }
                     else
                     {

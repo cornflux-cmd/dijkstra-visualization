@@ -34,6 +34,7 @@ public class Graph : MonoBehaviour
             if (vertex.connections.Count > 0)
             {
                 vertex.connections.RemoveAll(v => v == null);
+                vertex.connections.RemoveAll(v => v == vertex);
                 foreach (Vertex connection in vertex.connections)
                 {
                     if (connection != null)
