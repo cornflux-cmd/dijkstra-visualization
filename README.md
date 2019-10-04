@@ -1,6 +1,6 @@
 # Dijkstra Visualization
 
-![Game screenshot](https://imgur.com/U2VmTOB.png)
+![Game screenshot](https://imgur.com/1frrasU.png)
 ## About
 [GameOn Production](https://www.gameonproduction.com/) test task source code
 
