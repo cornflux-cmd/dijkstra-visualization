@@ -20,7 +20,8 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 2. Drag **Vertices** onto the **Graph** in Hierarchy, making them its children
 3. Connect the **Vertices** by specifying connections in each **Vertex's** corresponding component  
 **Note:** you only need to connect **Vertices** ONCE, algorithm will sync all pairs
-4. Click on **Graph** and press *Build*
+4. Under **Shortest Path** component on the **Graph** specify *Start* and *Finish* vertices
+5. Click *Build* under **Graph's** component
 
 ### Runtime
 Not yet fully supported, try at your own risk
