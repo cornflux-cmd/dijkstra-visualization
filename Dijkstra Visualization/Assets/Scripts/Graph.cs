@@ -17,10 +17,31 @@ public class Graph : MonoBehaviour
     public void CreateVerticesList()
     {
         Vertex[] verticesArray = transform.GetComponentsInChildren<Vertex>();
-
-        for (int i = 0; i < verticesArray.Length; i++)
+        if (verticesArray.Length > 0)
         {
-            verticesList.Add(verticesArray[i]);
+            for (int i = 0; i < verticesArray.Length; i++)
+            {
+                verticesList.Add(verticesArray[i]);
+            }
+        }
+       
+    }
+
+    public void SyncConnections()
+    {
+        foreach (Vertex vertex in verticesList)
+        {
+            if (vertex.connections.Count > 0)
+            {
+                while (vertex.connections.Remove(vertex) || vertex.connections.Remove(null)) { }
+                foreach (Vertex connection in vertex.connections)
+                {
+                    if (connection != null && !connection.connections.Contains(vertex))
+                    {
+                        connection.connections.Add(vertex);
+                    }
+                }
+            }
         }
     }
 }

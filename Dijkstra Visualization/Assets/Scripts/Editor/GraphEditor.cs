@@ -15,28 +15,36 @@ public class GraphEditor : Editor
     private Graph graph;
     private ShortestPath path;
     private SpriteRenderer renderer;
-    public static GraphEditor editor;
+    private bool isBuildButtonPressed;
+    private List<string> visitedVertices = new List<string>();
 
-    private void OnEnable()
+    private void Build()
     {
         graph = target as Graph;
         graph.CreateVerticesList();
         path = graph.GetComponent<ShortestPath>();
         DrawVertices(true);
+        graph.SyncConnections();
     }
+
     private void OnSceneGUI()
     {
-        if (graph.vertices.Count > 0)
+        if (isBuildButtonPressed && graph.vertices.Count > 0)
         {
             path.vertices = graph.vertices;
             path.CalculateShortestPath();
             DrawGraph();
         }
     }
+
     private void OnDisable()
     {
-        DrawVertices(false);
-        graph.vertices.Clear();
+        if (isBuildButtonPressed)
+        {
+            DrawVertices(false);
+            graph.vertices.Clear();
+            isBuildButtonPressed = false;
+        }
     }
 
     private void DrawGraph()
@@ -44,27 +52,30 @@ public class GraphEditor : Editor
 
         foreach (Vertex vertex in graph.vertices)
         {
+            visitedVertices.Add(vertex.name);
             DrawVertexLabel(vertex);
             foreach (Vertex connection in vertex.connections)
             {
+                if (visitedVertices.Contains(connection.name)) continue;
                 if (path.vertices.Contains(vertex) && path.vertices.Contains(connection))
                 {
                     if (vertex == path.start)
                     {
                         DrawEdge(vertex, connection, StartEdgeCode);
-                    } else
+                    }
+                    else
                     {
                         DrawEdge(vertex, connection, PathEdgeCode);
                     }
-                    
+
                 }
                 else
                 {
                     DrawEdge(vertex, connection, NormalEdgeCode);
                 }
-
             }
         }
+        visitedVertices.Clear();
     }
 
     private void DrawVertices(bool enable)
@@ -90,18 +101,29 @@ public class GraphEditor : Editor
             if (variant == NormalEdgeCode)
             {
                 Handles.color = Color.white;
-                
+
             }
             else if (variant == PathEdgeCode)
             {
                 Handles.color = Color.green;
-            } else if (variant == StartEdgeCode)
+            }
+            else if (variant == StartEdgeCode)
             {
                 Handles.color = Color.red;
             }
 
             Handles.DrawLine(vertex.transform.position, connection.transform.position);
             Handles.color = oldColor;
+        }
+    }
+
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+        if (GUILayout.Button("Build"))
+        {
+            isBuildButtonPressed = true;
+            Build();
         }
     }
 }

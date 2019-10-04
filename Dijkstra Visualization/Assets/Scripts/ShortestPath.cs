@@ -62,9 +62,12 @@ public class ShortestPath : MonoBehaviour
                 previous.Clear();
                 foreach (Vertex vertex in initialVerticesList)
                 {
-                    distances[vertex] = int.MaxValue;
-                    previous[vertex] = null;
-                    tempVerticesList.Add(vertex);
+                    if (vertex != null)
+                    {
+                        distances[vertex] = int.MaxValue;
+                        previous[vertex] = null;
+                        tempVerticesList.Add(vertex);
+                    }                    
                 }
                 distances[startVertex] = 0;
                 while (tempVerticesList.Count > 0)
