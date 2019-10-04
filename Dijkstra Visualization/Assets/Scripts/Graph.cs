@@ -21,22 +21,20 @@ public class Graph : MonoBehaviour
         {
             for (int i = 0; i < verticesArray.Length; i++)
             {
+                SyncConnections(verticesArray[i]);
                 verticesList.Add(verticesArray[i]);
             }
-            SyncConnections();
         }
        
     }
 
-    public void SyncConnections()
+    public void SyncConnections(Vertex vertex)
     {
-        foreach (Vertex vertex in verticesList)
-        {
-            if (vertex.connections.Count > 0)
+        if (vertex.connections.Count > 0)
             {
-                while (vertex.connections.Remove(vertex) || vertex.connections.Remove(null)) { }
-                foreach (Vertex connection in vertex.connections)
-                {
+            while (vertex.connections.Remove(vertex) || vertex.connections.Remove(null)) { }
+            foreach (Vertex connection in vertex.connections)
+            {
                     if (connection != null && !connection.connections.Contains(vertex))
                     {
                         connection.connections.Add(vertex);
@@ -44,5 +42,4 @@ public class Graph : MonoBehaviour
                 }
             }
         }
-    }
 }
