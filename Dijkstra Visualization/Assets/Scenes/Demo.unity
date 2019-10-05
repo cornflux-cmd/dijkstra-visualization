@@ -1482,12 +1482,12 @@ PrefabInstance:
         type: 3}
       propertyPath: finishVertex
       value: 
-      objectReference: {fileID: 1592996268}
+      objectReference: {fileID: 88952820}
     - target: {fileID: 8030779214328398692, guid: bda70e6452b1810459a9830e41beeec9,
         type: 3}
       propertyPath: startVertex
       value: 
-      objectReference: {fileID: 514824648}
+      objectReference: {fileID: 1214915137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bda70e6452b1810459a9830e41beeec9, type: 3}
 --- !u!4 &1776649106 stripped
