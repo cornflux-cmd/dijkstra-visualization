@@ -31,8 +31,3 @@ This project is an implementation of the [Dijkstra's algorithm](https://en.wikip
 Not yet fully supported, try at your own risk
 
 *Visual design inspired by [EmpireWorld's implementation](https://github.com/EmpireWorld/unity-dijkstras-pathfinding)*
-___
-<p align="center">
-  <b>Made With</b><br>
-  <a href="https://unity.com/"><img src="https://unity3d.com/files/images/ogimg.jpg"</a>
-</p>
